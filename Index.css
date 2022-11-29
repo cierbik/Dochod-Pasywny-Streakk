@@ -1,0 +1,189 @@
+:root {
+    --green: #38ccae;
+    --dark: #1b1b1b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(36,36,231,1) 0%, rgba(0,212,255,1) 100%);
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color:rgba(0,212,255,1) 100% ;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color:rgba(0,212,255,1);
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
+.nav{
+    position: relative;
+    left: 0px;
+    margin-bottom: 0px;
+    max-width: 230px;
+    height: 800px;
+    max-height: 800px;
+    border-radius: 20px ;
+    background: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
+    border: 1px solid black;
+    overflow: auto;
+}
+.nav_title{
+    font-size: 20px;
+}
+.streakk_nav_logo{
+    position: relative;
+    text-align: center;
+    left: 13px;
+}
+li{
+    display: inline-block;
+    position: relative;
+    font-weight: bold;
+    padding: 30px;
+    width: 200px;
+}
+#nav_bar  {
+    display: block;
+    color: white;
+    text-decoration: none;
+    width: 150px;
+    height: 30px;
+}
+li:hover {
+    background-color: rgba(128, 128, 128, 0.1);
+    opacity: 0.7;
+}
+#link {
+    color: white;
+    text-decoration: none;
+}
+.container {
+    max-width: 1400px;
+    max-height: 800px;
+    min-width: none;
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(0, 0, 0, 0.75);
+    background: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
+    padding: 32px 92px;
+    border-radius: 20px;
+    position: relative;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    overflow: auto;
+    text-align: center;
+}
+
+.bg__img {
+    position: absolute;
+}
+
+.right_bg__img--dollar {
+    left: 86.6%;
+    top: -50%;
+    opacity: 0.8;
+    animation: slideDown1 10s linear infinite
+}
+
+.left_bg__img--dollar {
+    left: 3%;
+    top: -50%;
+    opacity: 0.8;
+    animation: slideDown 10s linear infinite
+}
+
+header {
+    flex: 1;
+}
+main{
+    text-align: center;
+}
+h1 {
+    position: relative;
+    text-align: center;
+    padding: 24px 0 12px;
+    font-size: 48px;
+}
+
+p {
+    text-align: center;
+    padding-bottom: 12px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+}
+.full{
+    width: 450px;
+    margin-bottom: 10px;
+    padding: 16px 0;
+    font-size: 42px;
+    font-weight: 700;
+    color: #fff;
+    background: rgb(2,0,36);
+    background: rgb(18, 155, 182) ;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.full:hover{
+    opacity: 0.7;
+}
+
+
+
+
+/*
+button {
+    width: 250px;
+    margin-bottom: 32px;
+    padding: 16px 0;
+    font-size: 42px;
+    font-weight: 700;
+    color: #fff;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(36,36,231,1) 0%, rgba(0,212,255,1) 100%);
+    border: none;
+    position: relative;
+    
+    cursor: pointer;
+    overflow: hidden;
+}
+*/
+
+
+@keyframes slideDown {
+    from {transform: translateY(0vh)}
+    to {transform: translateY(300vh)}
+}
+@keyframes slideDown1 {
+    from {transform: translateY(0vh)}
+    to {transform: translateY(300vh)}
+}
